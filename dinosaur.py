@@ -1,10 +1,6 @@
 class Dinosaur:
-    def _init_(self, name, hit_points, attack_type):
-        self.name = name
-        self.hit_points = hit_points
-        self.attack_type = attack_type
+    def _init_(self, dinosaur_name, dinosaur_health_points, dinosaur_attack_strength):
+        self.dinosaur_name = dinosaur_name
+        self.dinosaur_health_points = dinosaur_health_points
+        self.dinosaur_attack_strength = dinosaur_attack_strength
 
-    def dinosaur_attack(self, robot):
-        robot.robot_hit_points -= self.dinosaur_attack
-        
-        
