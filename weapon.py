@@ -1,4 +1,4 @@
 class Weapon:
-    def __init__(self, weapon, attack_strength):
+    def __init__(self, weapon, weapon_strength):
         self.weapon = weapon
-        self.attack_strength = attack_strength
+        self.weapon_strength = weapon_strength

@@ -1,18 +1,20 @@
 from fleet import Robot_Fleet
 from herd import Dino_Herd
+import random
 
 class Battlefield:
     def _init_(self):
         self.dino_herd = Dino_Herd()
         self.robot_fleet = Robot_Fleet()
 
-    # def battle_start_option(self, battle_begin):
-    #     self.start_battle = input('Would you like to start a battle?')
-    #     if self.start_battle == 'yes':
-    #         print('Let the Battle begin!')
-    #         return battle_begin
-    #     else:
-    #         print('No Battle Today!')
+    def run_game(self):
 
-    def battle_begin(self):
-        pass
+        self.team_selection = input('To be robots or dinosaurs?')
+        if self.team_selection == 'robots':
+            team_robots = []
+            team_robots.append(random.choices(self.robot_fleet, length=3))
+        else:
+            pass
+  
+test = Battlefield()
+test.run_game()
