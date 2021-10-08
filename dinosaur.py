@@ -3,4 +3,3 @@ class Dinosaur:
         self.dinosaur_name = dinosaur_name
         self.dinosaur_health_points = dinosaur_health_points
         self.dinosaur_attack_strength = dinosaur_attack_strength
-
